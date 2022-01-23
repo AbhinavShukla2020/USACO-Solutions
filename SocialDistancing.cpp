@@ -9,7 +9,6 @@ bool f(vector<pair<long long,long long>> in,long long d,long long N){
     long long curPos=in[0].first;
     long long counter=0;
     while(counter<in.size()){
-        //cout<<curPos<<" "<<curAns<<endl;
         if(curPos+d<=in[counter].second){
             curAns++;
             curPos=max(curPos+d,in[counter].first);
@@ -22,7 +21,6 @@ bool f(vector<pair<long long,long long>> in,long long d,long long N){
             return true;
         }
     }
-    //cout<<endl<<endl<<endl;
     return false;
 }
 
